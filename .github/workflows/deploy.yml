@@ -6,8 +6,9 @@ on:
       - master
 
 jobs:
-  deploy_bundle_to_databricks:
+  deploy_bundle_to_dev_databricks:
     runs-on: ubuntu-latest
+    environment: databricks-dev
 
     env:
       DATABRICKS_HOST: ${{ vars.DATABRICKS_HOST }}
